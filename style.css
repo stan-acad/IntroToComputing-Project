@@ -19,8 +19,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  z-index: -1;
+  min-height: 100vh;
+  top: 0;
 }
 .content {
   height: 100vh;
@@ -80,7 +80,7 @@ navbar ul li:hover::after{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   bottom: 0;
   display: flex;
