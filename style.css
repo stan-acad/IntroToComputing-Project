@@ -15,7 +15,7 @@ body {
 }
 .cover {
   background-color: black;
-  background-image: url(/images/gradient.jpeg );
+  background-image: url( gradient.jpeg );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ navbar ul li:hover::after{
 
 .aboutus {
   background-color: black;
-  background-image: url(/images/lastpic.jpeg);
+  background-image: url(lastpic.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
