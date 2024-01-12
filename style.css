@@ -1,0 +1,163 @@
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+/* typefaces */
+@font-face {
+  font-family: 'Balto';
+  src: url('/Font/Balto-Bold.woff') format('woff'),
+}
+@font-face {
+  font-family: 'Alright';
+  src: url('/Font/AlrightSans.woff') format('woff'),
+}
+.cover {
+  background-color: black;
+  background-image: url(/images/gradient.jpeg );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.content {
+  height: 100vh;
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  width: 40%;
+  height: 10px;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff200;
+  
+}
+.text {
+  font-size:10pt;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: "Balto";
+}
+.navbar ul li::after{
+  content:'';
+  height: 3px;
+  width: 0%;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+navbar ul li:hover::after{
+  width:100%;
+}
+
+.aboutus {
+  background-color: black;
+  background-image: url(/images/lastpic.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.highlight {
+  color: #fff200;
+}
+.limetext {
+  color: black;
+  background: #fff200;
+}
+.white {
+  color: black;
+  background: white;
+}
+
+/* scroll animation */
+.scroll-animation .animated-tag {
+  animation: fade ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 45% cover 70%;
+}
+.scroll-animation .animated {
+  animation: fade ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 60% cover 70%;
+}
+.paragraph1 {
+  animation: fade ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 70% cover 80%;
+}
+@keyframes fade {
+  from {
+   opacity: 0;
+  }
+  to {
+   opacity: 1;
+  }
+}
+
+/* for cover */
+.cover .heading1 {
+  color: black;
+}
+.paragraph1 {
+  color: white;
+}
+/* all three headings */
+div h1, h2, h3, h4{
+  color: white;
+  font-family: 'Balto';
+  font-size: 30pt;
+  text-align: center;
+  padding: 10% 10% 30px 10%;
+}
+/* all paragraphs */
+div p {
+  line-height: 40px;
+  color: white;
+  font-family: 'Alright';
+  font-size: 15pt;
+ /* text-align: justify; */
+  text-indent: 40px;
+  padding: 30px 15% 30px 15%;
+}
+@media only screen and (max-width: 600px) {
+  /* Your styles for screens 600px or less go here */
+  .navbar {
+    width: 100%;
+  }
+  .paragraph1 {
+  animation: fade ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 40% cover 50%;
+}
+} 
