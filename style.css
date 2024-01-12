@@ -7,11 +7,11 @@ body {
 /* typefaces */
 @font-face {
   font-family: 'Balto';
-  src: url('/Font/Balto-Bold.woff') format('woff'),
+  src: url('Balto-Bold.woff') format('woff'),
 }
 @font-face {
   font-family: 'Alright';
-  src: url('/Font/AlrightSans.woff') format('woff'),
+  src: url('AlrightSans.woff') format('woff'),
 }
 .cover {
   background-color: black;
